@@ -40,6 +40,10 @@ Once the program is running, you'll be presented with a user interface to genera
 - Enter the number of procedures.
 - Click on "Run" to generate the labels.
 
+## Customizing Image Assets
+
+Comma includes a collection of image assets located in the `assets` directory of the project. These images are used within the application for various elements of the user interface. Feel free to use these pre-configured images, or replace them with your own to customize the look and feel of the program. 
+
 ## Updates in Version 1.1 
 
 - Blade length selection for 6", 9", and 12" blades.
