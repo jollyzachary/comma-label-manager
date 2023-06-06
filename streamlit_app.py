@@ -43,7 +43,8 @@ if run_button:
                 if blade_length == 'Custom':
                     label += ' ' * custom_spaces + f"{group_num}-{p:02}{s:02}"
                 else:
-                    label += ' ' * (int(blade_length[:-1]) - 2) + f"{group_num}-{p:02}{s:02}"
+                    spaces = int(blade_length[:-1]) - 2
+                    label += ' ' * spaces + f"{group_num}-{p:02}{s:02}"
 
                 # Add the label to the output table
                 output_table.append([label])
@@ -58,3 +59,4 @@ if run_button:
     with open('output.csv', 'r') as file:
         contents = file.read()
     st.code(contents, language='csv')
+
