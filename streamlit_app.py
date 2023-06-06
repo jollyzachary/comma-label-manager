@@ -44,7 +44,6 @@ if run_button:
                     label += ' ' * custom_spaces + f"{group_num}-{p:02}{s:02}"
                 else:
                     spaces = int(blade_length[:-1]) - 2
-                    label = label[:3] + '0' + label[4:]  # Remove leading zero
                     label += ' ' * spaces + f"{group_num}-{p:02}{s:02}"
 
                 # Add the label to the output table
@@ -60,4 +59,5 @@ if run_button:
     with open('output.csv', 'r') as file:
         contents = file.read()
     st.code(contents, language='csv')
+
 
