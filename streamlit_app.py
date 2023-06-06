@@ -48,6 +48,13 @@ if run_button:
                 # Add the label to the output table
                 output_table.append([label])
 
-    # Display the output table
-    st.table(output_table)
+    # Write the output table to a CSV file
+    with open('output.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(output_table)
 
+    # Display the output table as a file preview
+    st.markdown('### Output File Preview')
+    with open('output.csv', 'r') as file:
+        contents = file.read()
+    st.code(contents, language='csv')
