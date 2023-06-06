@@ -1,3 +1,3 @@
-streamlit==0.93.0
-pyqt5==5.15.4
-openpyxl==3.0.9
+streamlit
+pyqt5
+openpyxl
